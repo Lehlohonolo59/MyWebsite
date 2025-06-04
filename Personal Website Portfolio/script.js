@@ -21,11 +21,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const navProjects = document.getElementById("navProjects");
     const navContact = document.getElementById("navContact");
 
+    // NEW: Get references for mobile menu toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('navLinks');
+
+    // NEW: Toggle mobile navigation on hamburger icon click
+    if (mobileMenu && navLinks) {
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
     // Add event listeners for each navigation link
     if (navHome) {
         navHome.addEventListener('click', (e) => {
             e.preventDefault(); // Prevent default link behavior
             scrollToElement('#home'); // Scroll to the home section
+            // NEW: Close menu if open after clicking a link
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
         });
     }
 
@@ -33,6 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navSkillsEducation.addEventListener('click', (e) => {
             e.preventDefault();
             scrollToElement('#skills-education'); // Scroll to the skills and education section
+            // NEW: Close menu if open after clicking a link
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
         });
     }
 
@@ -40,6 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navExperience.addEventListener('click', (e) => {
             e.preventDefault();
             scrollToElement('#experience-section'); // Scroll to the experience section
+            // NEW: Close menu if open after clicking a link
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
         });
     }
 
@@ -47,6 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navCertificates.addEventListener('click', (e) => {
             e.preventDefault();
             scrollToElement('#certifications-section'); // Scroll to the certifications section
+            // NEW: Close menu if open after clicking a link
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
         });
     }
 
@@ -54,6 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navProjects.addEventListener('click', (e) => {
             e.preventDefault();
             scrollToElement('#projects-section'); // Scroll to the key projects section
+            // NEW: Close menu if open after clicking a link
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
         });
     }
 
@@ -61,6 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navContact.addEventListener('click', (e) => {
             e.preventDefault();
             scrollToElement('#contact-section'); // Scroll to the contact section
+            // NEW: Close menu if open after clicking a link
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
         });
     }
 
