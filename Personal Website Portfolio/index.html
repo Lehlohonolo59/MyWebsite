@@ -4,118 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
-
     <link rel="stylesheet" href="style.css">
-    <title>Personal portfolio </title>
+    <title>Lehlohonolo Sethibe - Personal Portfolio</title>
 </head>
 <body>
     <nav>
         <div class="nav-logo">
             <a href="#">
-                <img src="images/Logo.png">
+                <img src="images/Logo.png" alt="Lehlohonolo Sethibe Logo">
             </a>
         </div>
 
         <ul class="nav-links">
-            <li class="link"><a href="#">Home</a></li>
-            <li id="link1" class="link"><a href="#">About</a></li>
-            <li id="link2" class="link"><a href="#">Skills & Education</a></li>
-            <li id="link3" class="link"><a href="#">Training</a></li>
-            <li id="link4" class="link"><a href="#">Contact</a></li>
+            <li class="link"><a id="navHome" href="#home">Home</a></li>
+            <li class="link"><a id="navSkillsEducation" href="#skills-education">Skills & Education</a></li>
+            <li class="link"><a id="navExperience" href="#experience-section">Experience</a></li>
+            <li class="link"><a id="navCertificates" href="#certifications-section">Certificates</a></li>
+            <li class="link"><a id="navProjects" href="#projects-section">Key Projects</a></li>
+            <li class="link"><a id="navContact" href="#contact-section">Contact me</a></li>
         </ul>
     </nav>
 
-    <header class="container">
+    <header class="container" id="home">
         <div class="content">
             <span class="blur"></span>
             <span class="blur"></span>
-            <h1>Hi, I'm <span>Lehlohonolo</span>, Software developer</h1>
+            <h1>Hi, I'm <span>Lehlohonolo</span>, Software Developer</h1>
+            
             <p>
-                A recent graduate of IIE Rosebank College with a diploma in Information Technology in Software Development, 
-                I am a budding software developer poised to make a significant impact in the field. Armed with a solid 
-                foundation in software development principles and modern technologies, I am eager to apply my skills 
-                and knowledge to real-world projects. My education at IIE Rosebank College has equipped them with the 
-                necessary tools to tackle challenges in software design, development, and implementation.
+                Motivated and adaptable IT graduate with a Diploma in Software Development from IIE Rosebank College, 
+                equipped with a strong foundation in computer literacy and programming. Passionate about all aspects of 
+                software development—frontend, backend, and full stack—with a willingness to learn and apply skills in 
+                real-world scenarios. Brings a learner's mindset, strong problem-solving abilities, and a commitment to 
+                continuous growth in the dynamic tech landscape.
             </p>
-            <a href="Lehlohonolo Sethibe.pdf" target="_blank">
-                <button class="btn">View CV</button>
-              </a>
-        </div>
-        <div class="image">
-            <img src="images/Coding.png">
+            
+            <a href="Lehlohonolo Sethibe CV.pdf" target="_blank" download="Lehlohonolo_Sethibe_CV.pdf">
+                <button class="btn">Download CV</button>
+            </a>
         </div>
         
-        <div class="Skill">
+        <div class="image">
+            <img src="images/Coding.png" alt="Coding illustration">
+        </div>
+        
+        <div class="Skill" id="skills-education"> 
             <div class="content">
-                <h2>Skills</h2>
+                <h2>Technical Skills</h2>
                 <ul class="Skills">
-                  <li><strong>Programming Languages:</strong> Java, C#, ASP.NET, Kotlin, JavaScript</li>
-                  <li><strong>Web Development Technologies:</strong> HTML, CSS, JavaScript</li>
-                  <li><strong>Database Management:</strong> MySQL, Oracle, Azure SQL</li>
-                  <li><strong>Software Development Life Cycle (SDLC)</strong></li>
+                    <li><strong>Programming Languages:</strong> Java, C#, ASP.NET, Kotlin, JavaScript</li>
+                    <li><strong>Web Development Technologies:</strong> HTML, CSS, JavaScript</li>
+                    <li><strong>Database Management:</strong> MySQL, Oracle, Azure SQL</li>
+                    <li><strong>Cloud Platforms:</strong> Microsoft Azure Services, Azure AI, Cloud Environment Management</li>
+                    <li><strong>Software Development Life Cycle (SDLC)</strong></li>
+                    <li><strong>Professional Skills:</strong> Problem-solving, Team Collaboration, Technical Support</li>
                 </ul>
             </div>
-            <div class="Education">
+            
+            <div class="Education"> 
                 <div class="content">
                     <h2>Education</h2>
                     <ul class="education">
-                        <li><strong>TOPAZ SECONDARY SCHOOL</strong><br>
-                            Matric National Senior Certificate (NSC)<br>
-                            2016 – 2020
-                        </li>
-                        <li><strong>IIE ROSEBANK COLLEGE</strong><br>
+                        <li>
+                            <strong>IIE ROSEBANK COLLEGE</strong><br>
                             IIE Diploma in Information Technology in Software Development<br>
-                            2021 – 2023
+                            <em>2021 – 2023</em><br>
+                            <span class="achievement">Academic Excellence Award 2023 | Average: 77.5%</span>
+                        </li>
+                        <li>
+                            <strong>TOPAZ SECONDARY SCHOOL</strong><br>
+                            National Senior Certificate (NSC)<br>
+                            <em>2016 – 2020</em>
                         </li>
                     </ul>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <div class="training">
-                 <div class="content">
-                <h2>Training</h2>
-                <p> Following is the certificates I have earned and the company I trained at</p>
-                <ul class="training">
-                    <li><strong>Netcampus</strong><br>
-                        <strong>Microsoft Certified: Azure AI Engineer Associate</strong><br>
-                        Earned on: March, 2024<br>
-                        Certification number: C0CN85-BD5DF6
-                    </li>
-                    <li><strong>Netcampus</strong><br>
-                        <strong>Microsoft Certified: Azure Data Fundamentals</strong><br>
-                        Earned on: February, 2024<br>
-                        Certification number: AB056E-F54ADA
-                    </li>
-                </ul>
+
+            <div class="experience" id="experience-section">
+                <div class="content">
+                    <h2>Professional Experience</h2>
+                    <div class="experience-grid">
+                        <div class="experience-item">
+                            <strong>EconArch Consulting and IT Services (Pty) Ltd</strong><br>
+                            <em>Intern - Support & Data/AI Teams</em><br>
+                            <span class="duration">August 2024 – Present</span><br>
+                            <p class="job-description">
+                                Providing technical support for Microsoft products (Outlook, Teams, Microsoft cloud platform). 
+                                Contributing to Data and AI projects using Microsoft tools and foundational software development knowledge.
+                            </p>
+                        </div>
+                        <div class="experience-item">
+                            <strong>Netcampus (Microsoft Training Partner)</strong><br>
+                            <em>Learnership Program Participant - Microsoft Data & AI Track</em><br>
+                            <span class="duration">February 2024 – January 2025</span><br>
+                            <p class="job-description">
+                                Completed comprehensive 12-month Microsoft-certified learnership program focused on Data & AI technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="certifications" id="certifications-section">
+                <div class="content">
+                    <h2>Microsoft Certifications</h2>
+                    <div class="cert-table">
+                        <div class="cert-item">
+                            <strong>Microsoft Certified: Fabric Analytics Engineer Associate</strong><br>
+                            <span class="cert-date">Earned: November 2024</span><br>
+                            <span class="cert-id">ID: BX85A5-55D345</span>
+                        </div>
+                        <div class="cert-item">
+                            <strong>Microsoft Certified: Azure Data Engineer Associate</strong><br>
+                            <span class="cert-date">Earned: October 2024</span><br>
+                            <span class="cert-id">ID: 46BC3A-E82675</span>
+                        </div>
+                        <div class="cert-item">
+                            <strong>Microsoft Certified: Power BI Data Analyst Associate</strong><br>
+                            <span class="cert-date">Earned: October 2024</span><br>
+                            <span class="cert-id">ID: 6524B5-F36FWA</span>
+                        </div>
+                        <div class="cert-item">
+                            <strong>Microsoft Certified: Azure AI Engineer Associate</strong><br>
+                            <span class="cert-date">Earned: March 2024</span><br>
+                            <span class="cert-id">ID: C0CN85-BD5DF6</span>
+                        </div>
+                        <div class="cert-item">
+                            <strong>Microsoft Certified: Azure Data Fundamentals</strong><br>
+                            <span class="cert-date">Earned: February 2024</span><br>
+                            <span class="cert-id">ID: AB056E-F54ADA</span>
+                        </div>
+                        <div class="cert-item">
+                            <strong>Microsoft Certified: Azure Administrator Associate</strong><br>
+                            <span class="cert-date">Earned: January 2025</span><br>
+                            <span class="cert-id">ID: 73EA861C966EE6FD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="training" id="projects-section"> 
+                <div class="content">
+                    <h2>Key Projects</h2>
+                    <ul class="training">
+                        <li>
+                            <strong>Disaster Alleviation Foundation Web App</strong><br>
+                            <em>ASP.NET Web Application with Azure SQL Database</em><br>
+                            <span class="project-date">August 2023 - November 2023</span><br>
+                            <p class="project-description">
+                                Developed a web application to aid the Disaster Alleviation Foundation in managing donations 
+                                to disaster-affected areas. Built using ASP.NET, Visual Studio, and Azure SQL database as part 
+                                of college Portfolio of Evidence (POE).
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Personal Portfolio Website</strong><br>
+                            <em>HTML, CSS & JavaScript</em><br>
+                            <span class="project-date">August 2023 - Present</span><br>
+                            <p class="project-description">
+                                Created and continuously maintaining a responsive personal portfolio website showcasing web development abilities using 
+                                modern web technologies and best practices.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
     </header>
 
-    <footer class="container">
+    <footer class="container" id="contact-section">
         <span class="blur"></span>
         <span class="blur"></span>
         <div class="column">
             <div class="logo">
-                <img src="images/Logo.png">
+                <img src="images/Logo.png" alt="Lehlohonolo Sethibe Logo">
             </div>
             <p>
                 © LS 2024 All Rights Reserved | Designed with ❤️ by Lehlohonolo
             </p>
             <div class="socials">
-                <a href="https://www.linkedin.com/in/lehlohonolo-sethibe-547b98206/"><i class="ri-linkedin-box-fill"></i></a>
-                <a href="https://github.com/Lehlohonolo59"><i class="ri-github-fill"></i></a>
-            </div>
-            <div class="column">
-                <h4>Contact</h4>
-                <p>Email: <a href="mailto:hlonisethibe59@gmail.com">hlonisethibe59@gmail.com</a></p>
-                <p>Cellphone: 073 832 2078</p>
+                <a href="https://www.linkedin.com/in/lehlohonolo-sethibe-547b98206/" target="_blank" aria-label="LinkedIn Profile">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://github.com/Lehlohonolo59" target="_blank" aria-label="GitHub Profile">
+                    <i class="ri-github-fill"></i>
+                </a>
             </div>
         </div>
-
+        <div class="column">
+            <h4>Contact</h4>
+            <p>Email: <a href="mailto:hlonisethibe59@gmail.com">hlonisethibe59@gmail.com</a></p>
+            <p>Phone: <a href="tel:+27817954600">+27 81 795 4600</a></p>
+            <p>Location: Johannesburg, Gauteng, South Africa</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
