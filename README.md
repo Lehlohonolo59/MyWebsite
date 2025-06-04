@@ -1,6 +1,7 @@
 # Lehlohonolo Sethibe - Personal Portfolio
 
-![image](https://github.com/user-attachments/assets/f9cbf15b-a9f3-4358-81de-c28f7fc3aa42)
+![image](https://github.com/user-attachments/assets/056195c9-077e-4803-b963-a0ad6f53fb5f)
+
 
 
 ## Table of Contents
