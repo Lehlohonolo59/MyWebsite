@@ -341,10 +341,40 @@ footer .column p a:hover {
     color: #4CAF50;
 }
 
+/* Hamburger menu icon styles */
+.menu-toggle {
+    display: none; /* Hidden by default on larger screens */
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
 /* Responsive Design */
-@media (width < 900px) {
+@media (max-width: 900px) { /* Changed from 'width < 900px' to 'max-width: 900px' for consistency */
     .nav-links {
-        display: none; /* Hide navigation links on smaller screens */
+        display: none; /* Hide navigation links by default on smaller screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 80px; /* Adjust based on your nav height */
+        left: 0;
+        width: 100%;
+        background-color: #0f1c42; /* Same as body background */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 999; /* Ensure it's above other content */
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show navigation links when 'active' class is present */
+    }
+
+    .nav-links .link {
+        margin: 0.5rem 0; /* Add some vertical spacing */
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger icon on smaller screens */
     }
     
     header {
@@ -389,7 +419,7 @@ footer .column p a:hover {
 }
 
 /* Additional Mobile Responsive Styles */
-@media (width < 600px) {
+@media (max-width: 600px) { /* Changed from 'width < 600px' to 'max-width: 600px' for consistency */
     .container {
         padding: 3rem 1rem; /* Reduce container padding on very small screens */
     }
