@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+/* Global Reset Styles */
+* {
     padding: 0;
     margin: 0;
     outline: none;
@@ -8,21 +10,25 @@
     box-sizing: border-box;
 }
 
-img{
+/* Image Styles */
+img {
     width: 100%;
     display: flex;
 }
 
-a{
+/* Link Styles */
+a {
     text-decoration: none;
 }
 
-body{
-    font-family:'Poppins', sans-serif;
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
     background-color: #0f1c42;
 }
 
-nav{
+/* Navigation Styles */
+nav {
     max-width: 1000px;
     margin: auto;
     padding: 1rem 0rem;
@@ -32,24 +38,25 @@ nav{
     gap: 1rem;
 }
 
-.nav-logo{
+.nav-logo {
     max-width: 170px;
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
-     display: flex;
-     align-items: center;
-     gap: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
-.link a{
+/* Navigation Link Styles */
+.link a {
     position: relative;
     padding-bottom: 0.75rem;
     color: #fff;
 }
 
-.link a::after{
+.link a::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -60,11 +67,12 @@ nav{
     transition: all 0.3s ease;
 }
 
-.link a:hover::after{
+.link a:hover::after {
     width: 100%;
 }
 
-.btn{
+/* Button Styles */
+.btn {
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
@@ -73,19 +81,28 @@ nav{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.container{
+
+.btn:hover {
+    background-color: #025a87;
+    transform: translateY(-2px);
+}
+
+/* Container Styles */
+.container {
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
 }
 
-.blur{
+/* Background Blur Effects */
+.blur {
     position: absolute;
     box-shadow: 0 0 1000px 50px #2e4ca5;
     z-index: -100;
 }
 
-header{
+/* Header Styles */
+header {
     position: relative;
     padding-top: 2rem;
     display: grid;
@@ -94,7 +111,8 @@ header{
     gap: 2rem;
 }
 
-header .content h1{
+/* Main Heading Styles */
+header .content h1 {
     color: #fff;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -102,112 +120,290 @@ header .content h1{
     line-height: 4rem;
 }
 
-header .content h1 span{
+header .content h1 span {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
 
-header .content p{
+/* Paragraph Styles */
+header .content p {
     margin-bottom: 2rem;
     color: #ccc;
+    line-height: 1.6;
 }
 
-header .image{
+/* Image Container Styles */
+header .image {
     position: relative;
 }
 
-header .image img{
+header .image img {
     max-width: 600px;
     margin: auto;
 }
-/*
-  Style for skills, education and training
-*/
-header .content h2{
+
+/* Section Heading Styles */
+header .content h2 {
     color: #fff;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
+/* Skills Section Styles */
 .container .content ul.Skills {
     color: white;
-  }
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
 
-  .container .content ul.education {
+.container .content ul.Skills li {
+    margin-bottom: 0.8rem;
+}
+
+/* Education Section Styles */
+.container .content ul.education {
     color: white;
-  }
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
 
-  .container .content ul.training {
+.container .content ul.education li {
+    margin-bottom: 1.5rem;
+}
+
+.achievement {
+    color: #4CAF50;
+    font-style: italic;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Experience Section Styles */
+.experience {
+    margin-top: 3rem;
+}
+
+/* Professional Experience Grid Layout - Stretched horizontally */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use auto-fit for responsiveness and minmax for stretching */
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.experience-item {
+    color: white;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid #037dbe;
+}
+
+.duration {
+    color: #4CAF50;
+    font-weight: 500;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.job-description {
+    color: #ccc;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+/* Certifications Section Styles */
+.certifications {
+    margin-top: 3rem;
+}
+
+/* Certification Table Layout - 3 Columns, 2 Rows */
+.cert-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(2, auto); /* Two rows, auto height */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.cert-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+    color: white;
+}
+
+.cert-date {
+    color: #4CAF50;
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.cert-id {
+    color: #ccc;
+    font-size: 0.9rem;
+    font-family: monospace;
+}
+
+/* Training/Projects Section Styles - Side by Side */
+.container .content ul.training {
     color: white;
     list-style-type: none;
     padding: 0;
-  }
-  
-  .container .content ul.training li {
-    margin-bottom: 10px;
-  }
-  
-  .container .content ul.training li strong {
-    font-weight: bold;
-  }
-  
-  .container .content ul.training li span {
-    display: block;
-    margin-top: 5px;
-  }
-  
-  .container .content ul.training li span.certificate {
-    font-style: italic;
-  }
-
-footer{
-    position: relative;
-    display: grid;
-    grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
+    display: grid; /* Use grid for side-by-side layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns, responsive */
+    gap: 2rem; /* Gap between projects */
 }
 
-footer .column .logo{
+.container .content ul.training li {
+    margin-bottom: 0; /* Remove individual item margin as gap handles it */
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid #ff6b35;
+    height: 100%; /* Ensure items stretch to fill row height */
+}
+
+.project-date {
+    color: #ff6b35;
+    font-weight: 500;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.project-description {
+    color: #ccc;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.container .content ul.training li strong {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    position: relative;
+    grid-template-columns: 1fr repeat(3, 1fr); /* Default to 4 columns */
+    gap: 2rem;
+    padding: 5rem 2rem; /* Add padding to footer */
+    display: grid; /* Ensure grid display */
+}
+
+footer .column .logo {
     max-width: 100px;
     margin-bottom: 2rem;
 }
 
-footer .column p{
+footer .column p {
     color: #ccc;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem; /* Adjusted margin for better spacing */
 }
 
-footer .column .socials{
+/* Social Media Links */
+footer .column .socials {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-top: 1rem; /* Add margin to separate from text */
 }
 
-footer .column .socials a{
+footer .column .socials a {
     color: #ccc;
     padding: 5px 10px;
     font-size: 2rem;
+    transition: color 0.3s ease;
 }
 
-footer .column h4{
+footer .column .socials a:hover {
+    color: #037dbe;
+}
+
+footer .column h4 {
     color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem; /* Adjusted margin for better spacing */
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-@media (width < 900px){
-    .nav-links{
-        display:contents;
+/* Contact Links */
+footer .column p a {
+    color: #037dbe;
+    transition: color 0.3s ease;
+}
+
+footer .column p a:hover {
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (width < 900px) {
+    .nav-links {
+        display: none; /* Hide navigation links on smaller screens */
     }
+    
     header {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr); /* Stack header content on smaller screens */
     }
-    header .image{
-        grid-area: 1/1/2/2;
+    
+    header .image {
+        grid-area: 1/1/2/2; /* Reorder image to appear above content on mobile */
     }
-    footer{
-        grid-template-columns: 1fr 200px;
+    
+    footer {
+        grid-template-columns: 1fr 200px; /* Adjust footer columns for tablet */
+    }
+    
+    /* Mobile Styles for Experience Grid */
+    .experience-grid {
+        grid-template-columns: 1fr; /* Stack experience items on mobile */
+        gap: 1rem;
+    }
+    
+    /* Mobile Styles for Certifications Table */
+    .cert-table {
+        grid-template-columns: 1fr; /* Stack certification items on mobile */
+        gap: 1rem;
+    }
+
+    /* Mobile Styles for Projects */
+    .container .content ul.training {
+        grid-template-columns: 1fr; /* Stack project items on mobile */
+        gap: 1rem;
+    }
+    
+    /* Mobile Heading Sizes */
+    header .content h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    
+    header .content h2 {
+        font-size: 1.5rem;
     }
 }
 
+/* Additional Mobile Responsive Styles */
+@media (width < 600px) {
+    .container {
+        padding: 3rem 1rem; /* Reduce container padding on very small screens */
+    }
+    
+    nav {
+        padding: 1rem; /* Adjust navigation padding */
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
 
-
+    footer {
+        grid-template-columns: 1fr; /* Stack footer columns on very small screens */
+    }
+}
