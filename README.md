@@ -50,12 +50,12 @@ This is a static website, so setting it up is straightforward.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Lehlohonolo59/Your-Repository-Name.git](https://github.com/Lehlohonolo59/Your-Repository-Name.git)
+    git clone [https://github.com/Lehlohonolo59/MyWebsite.git](https://github.com/Lehlohonolo59/MyWebsite.git)
     ```
     *(Replace `Your-Repository-Name` with the actual name of your GitHub repository)*
 2.  **Navigate to the project directory:**
     ```bash
-    cd Your-Repository-Name
+    cd MyWebsite
     ```
 3.  **Open `index.html`:**
     Simply open the `index.html` file in your preferred web browser (e.g., Chrome, Firefox, Edge).
@@ -65,3 +65,23 @@ The website can also be viewed directly via GitHub Pages (if enabled).
 ## Project Structure
 
 The project follows a clean and organized structure:
+## Certifications
+
+A list of my key Microsoft Certifications can be found on my [LinkedIn Profile](https://www.linkedin.com/in/lehlohonolo-sethibe-547b98206/) and within the website's "Certificates" section. Some notable certifications include:
+
+* Microsoft Certified: Fabric Analytics Engineer Associate
+* Microsoft Certified: Azure Data Engineer Associate
+* Microsoft Certified: Power BI Data Analyst Associate
+* Microsoft Certified: Azure AI Engineer Associate
+* Microsoft Certified: Azure Data Fundamentals
+* Microsoft Certified: Azure Administrator Associate
+
+## Contact
+
+Feel free to connect with me!
+
+* **Email:** hlonisethibe59@gmail.com
+* **Phone:** +27 81 795 4600
+* **Location:** Johannesburg, Gauteng, South Africa
+* **LinkedIn:** [Lehlohonolo Sethibe](https://www.linkedin.com/in/lehlohonolo-sethibe-547b98206/)
+* **GitHub:** [Lehlohonolo59](https://github.com/Lehlohonolo59)
