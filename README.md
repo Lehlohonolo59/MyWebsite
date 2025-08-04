@@ -13,7 +13,6 @@
 * [Project Structure](#project-structure)
 * [Certifications](#certifications)
 * [Contact](#contact)
-* [License](#license)
 
 ## About Me
 
